@@ -18,7 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "onchange": "^7.1.0",
-    "rescript": "^9.1.4"
+    "rescript": "10"
   },
   "dependencies": {
     "@ryyppy/rescript-promise": "^2.1.0",

@@ -17,11 +17,9 @@ Zora.test("should catch failures", (function (t) {
                               return Promise.resolve((t.ok(true, "The promise did reject"), undefined));
                             }));
               }));
-        
       }));
 
 export {
   AnError ,
-  
 }
 /*  Not a pure module */

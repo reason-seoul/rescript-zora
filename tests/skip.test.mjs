@@ -10,7 +10,6 @@ Zora$1.test("should skip some tests", (function (t) {
               }));
         t.skip("also broken", (function (t) {
                 t.fail("Test is broken, too");
-                
               }));
         return Zora.done(undefined);
       }));

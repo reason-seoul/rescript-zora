@@ -22,7 +22,6 @@ Zora$1.test("Test assertions", (function (t) {
         Zora.optionNone(t, undefined, "None is None");
         Zora.optionSome(t, Caml_option.some(x), (function (t, n) {
                 t.equal(n.hello, "world", "option should be hello world");
-                
               }));
         Zora.resultError(t, {
               TAG: /* Error */1,
@@ -33,7 +32,6 @@ Zora$1.test("Test assertions", (function (t) {
               _0: x
             }, (function (t, n) {
                 t.equal(n.hello, "world", "Is Ok Result");
-                
               }));
         return Zora.done(undefined);
       }));

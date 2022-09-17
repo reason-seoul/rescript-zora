@@ -6,9 +6,8 @@ import * as Zora$1 from "zora";
 function wait(amount) {
   return new Promise((function (resolve, param) {
                 setTimeout((function (param) {
-                        return resolve(undefined);
+                        resolve(undefined);
                       }), amount);
-                
               }));
 }
 
@@ -17,7 +16,7 @@ Zora$1.test("Some Parallel Tests", (function (t) {
           contents: 0
         };
         t.test("parallel 1", (function (t) {
-                return Zora.$$then(wait(10), (function (param) {
+                return Zora.then(wait(10), (function (param) {
                               t.equal(state.contents, 1, "parallel 2 should have incremented by now");
                               state.contents = state.contents + 1 | 0;
                               t.equal(state.contents, 2, "parallel 1 should increment");
@@ -43,6 +42,5 @@ Zora$1.test("Some Parallel Tests", (function (t) {
 
 export {
   wait ,
-  
 }
 /*  Not a pure module */
